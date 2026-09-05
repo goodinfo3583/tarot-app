@@ -14,4 +14,19 @@ function App() {
   );
 }
 
+
+      {/* 👉 召喚螢火蟲特效 */}
+      <Fireflies /> 
+
+      {/* 下面是你原本的 Provider 和路由，不需要動它們 */}
+      <ReadingProvider>
+         {/* 原本的程式碼... */}
+      </ReadingProvider>
+
+    </div>
+  );
+}
+
+
 export default App;
+

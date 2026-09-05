@@ -1,0 +1,41 @@
+.fireflies-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* 確保不會擋到滑鼠點擊卡牌 */
+  z-index: 0; /* 放在背景層 */
+  overflow: hidden;
+}
+
+.firefly {
+  position: absolute;
+  bottom: -20px;
+  width: 4px;
+  height: 4px;
+  background-color: #ffd700; /* 金色螢火蟲 */
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.8), 0 0 20px 5px rgba(255, 215, 0, 0.4);
+  opacity: 0;
+  animation: floatUp ease-in infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-20vh) translateX(15px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-80vh) translateX(-15px);
+  }
+  100% {
+    transform: translateY(-110vh) translateX(10px);
+    opacity: 0;
+  }
+}
