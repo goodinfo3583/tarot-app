@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* 👇 加上你的背景圖片，記得把 tavern-bg.jpg 換成你的檔名 */
+  background-image: linear-gradient(rgba(15, 20, 30, 0.7), rgba(15, 20, 30, 0.9)), url('/月下綠洲城.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 讓背景固定，滾動時不會跟著跑 */
+  color: #E2E8F0;
+  font-family: '微軟正黑體', 'PingFang SC', sans-serif;
+}
