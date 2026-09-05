@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+  /* 👇 這裡套用背景與遮罩 */
+  background-image: linear-gradient(rgba(15, 20, 30, 0.7), rgba(15, 20, 30, 0.9)), url('/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  color: #E2E8F0;
+  font-family: '微軟正黑體', 'PingFang SC', sans-serif;
+  overflow-x: hidden;
 }
 
 .App-header {
