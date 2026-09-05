@@ -15,9 +15,12 @@ const TarotCard: React.FC<TarotCardProps> = ({ cardData, isFlipped, isReversed }
   return (
     <div className={`tarot-card ${isFlipped ? 'flipped' : ''} ${isReversed ? 'reversed' : ''}`}>
       <div className="card-inner">
+        {/* 牌背：未翻開的狀態 */}
         <div className="card-back">
           <img src={cardBackImage} alt="卡片背面" />
         </div>
+        
+        {/* 牌面：翻開後的狀態 */}
         <div className="card-front">
           {cardData ? (
             <img 
