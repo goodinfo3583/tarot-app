@@ -1,10 +1,9 @@
 /* 1. 卡片外觀與懸浮特效 */
 .tarot-card {
-  width: 120px;
-  height: 200px;
+  width: 190px;   /* 原本是 120px，放大 */
+  height: 320px;  /* 原本是 200px，放大 */
   perspective: 1000px;
   position: relative;
-  /* 加入滑鼠互動的平滑過渡 */
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
 }
